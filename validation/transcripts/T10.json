@@ -1,0 +1,50 @@
+{
+  "id": "T10",
+  "scenario": "layoff",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hi. You wanted to see me? Is this about the Q3 dashboard? I'm nearly done with it."
+    },
+    {
+      "role": "manager",
+      "text": "Hi Priya, thanks for coming in. It's not about the dashboard, and I'm going to be direct because you deserve that: your role is being eliminated as part of a restructuring of the analytics team, and the decision is final. Your last day will be 30 days from today, and I'm so sorry to be telling you this."
+    },
+    {
+      "role": "employee",
+      "text": "Wait. Eliminated? I... what do you mean, my role is being eliminated? I've had 'exceeds' every year, I don't understand. Is this about performance, is there something I've missed?"
+    },
+    {
+      "role": "manager",
+      "text": "No, this is not about your performance at all, Priya. Your work has been consistently strong, and that's exactly why I want to be clear that this is a business decision about the structure of the team, not a judgment on you. I know that's a lot to take in, and it's completely reasonable to be shocked, so please take whatever moment you need before we talk about what comes next."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Okay, I need a second. My daughter's health cover runs through this job, so... what happens to that? And why my role? If it's structure, why not someone else's?"
+    },
+    {
+      "role": "manager",
+      "text": "Take your time, Priya. On health cover, it continues for 3 months after your last day, so your daughter stays covered through that period, and Sam in HR will confirm the details in writing today. As for why your role, I can't go into who else is affected, and I know that's frustrating, but I can tell you it was about how the team is being restructured and not about you or your work. I can also walk you through the severance and support, which is 14 weeks of pay plus outplacement help, whenever you feel ready, or we can pause here first."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Three months for her cover, in writing from Sam. That helps, I think. I just... I don't understand how a role I've had for six years just disappears. Can you at least tell me when this was decided?"
+    },
+    {
+      "role": "manager",
+      "text": "I don't have an exact date I can share with you, Priya, and I won't guess, but I can tell you the decision is final and it was made at the company level, not something I or anyone was hiding from you over a long stretch. I know six years is a long time, and it's fair to feel blindsided by this. What questions are on your mind right now, or would it help if I walked you through the severance next?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So it was decided, and I just find out now, in a meeting about a dashboard I'm still finishing. I'm not sure what to do with that. Can you walk me through the severance, though? I need the numbers, I think, before I can think straight."
+    },
+    {
+      "role": "manager",
+      "text": "Of course, and I'm sorry the way this landed felt so abrupt. Your severance is 14 weeks of pay, which is 8 weeks plus 1 week for each of your 6 years of service. Your health cover continues for 3 months after your last day, and outplacement support is included. Sam in HR will send the full paperwork today, so you'll have every number in writing, and what part of this would you like me to go through more slowly?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So 8 weeks plus one per year, that's 14. Is the 30 days paid, or do I work it? And can I get a reference from you? I'm going to need one for the job search."
+    }
+  ]
+}

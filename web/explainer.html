@@ -1,0 +1,198 @@
+<title>Manager Flight Simulator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single editorial column with one instrument-panel moment (the trust gauge) in the hero; sections stack top-down. Deliberately one dark "cockpit" look. */
+:root{
+  --bg:#0e1824; --panel:#152232; --ink:#e9eef3; --muted:#9bacbd; --line:#26384c;
+  --amber:#f0a83a; --cyan:#7cc6d9; --red:#ef7f73; --green:#79c99a;
+  --display:"Big Shoulders Display","Arial Narrow",sans-serif; --body:"Source Serif 4",Georgia,serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+.col{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+h1,h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:.95;margin:0;text-wrap:balance}
+h1{font-size:clamp(46px,8vw,92px)}
+h2{font-size:clamp(32px,5vw,50px);margin-bottom:14px}
+p{margin:0 0 14px;max-width:62ch}
+.lead{font-size:21px;color:var(--ink)}
+.muted{color:var(--muted)}
+section{padding-block:56px;border-top:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:36px;align-items:center;padding-block:48px 56px}
+@media (max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}}
+.quote{font-size:22px;font-style:italic;border-left:3px solid var(--amber);padding-left:16px;margin:18px 0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{font-family:var(--mono);font-size:14px;font-weight:500;text-decoration:none;padding:12px 18px;border-radius:6px;border:1px solid var(--amber);color:var(--bg);background:var(--amber)}
+.btn.ghost{background:transparent;color:var(--amber)}
+.btn:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.gauge{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;min-width:0}
+.gauge svg{width:100%;height:auto;display:block}
+.readout{font-family:var(--mono);font-size:13px;color:var(--muted);min-height:3.2em}
+.readout b{color:var(--ink);font-weight:500}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 18px}
+.tabs button{font-family:var(--mono);font-size:13.5px;padding:8px 13px;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{border-color:var(--amber);color:var(--amber)}
+.aud{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+@media (max-width:720px){.aud{grid-template-columns:minmax(0,1fr)}}
+.aud h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin:0 0 6px;font-weight:500}
+.flow{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}
+.flow svg{min-width:720px;width:100%;height:auto;display:block}
+.convo{display:flex;flex-direction:column;gap:10px;max-width:760px}
+.line{padding:12px 15px;border-radius:10px;font-size:16.5px;min-width:0}
+.line .who{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px}
+.line.emp{background:var(--panel);align-self:flex-start;max-width:88%}
+.line.mgr{background:#3a2a17;border:1px solid #6b4a1f;align-self:flex-end;max-width:88%}
+.line.fix{background:#14302a;border:1px solid #2d6a55;align-self:flex-end;max-width:88%}
+.flag{font-family:var(--mono);font-size:12px;color:var(--red);display:block;margin-top:6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--amber);font-variant-numeric:tabular-nums}
+.stat span{font-size:15px;color:var(--muted)}
+.stat.pending b{color:var(--cyan);font-size:30px;line-height:1.2}
+ul.limits{padding-left:20px;margin:0;max-width:62ch}
+ul.limits li{margin-bottom:8px}
+footer{padding-block:32px 56px;border-top:1px solid var(--line);font-family:var(--mono);font-size:13px;color:var(--muted)}
+footer a{color:var(--cyan)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="col">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">Manager Flight Simulator</div>
+      <h1>Practise the conversation before it costs someone their trust.</h1>
+      <p class="quote">"Nobody trained me for this. I'm about to tell Priya her job is gone, and I get one try."</p>
+      <p class="lead">Pilots rehearse emergencies in a simulator. Managers do their hardest conversations live, on real people. This lets a manager practise on a simulated employee first, then get graded against an HR playbook, line by line.</p>
+      <div class="cta">
+        <a class="btn" href="https://claude.ai/artifact/26pcBmdNnF7Hi7tqZASj2b" target="_blank" rel="noopener">Try it now</a>
+        <a class="btn ghost" href="#moment">See a real scorecard moment</a>
+      </div>
+    </div>
+    <div class="gauge" aria-label="Trust gauge replaying a real practice session">
+      <svg viewBox="0 0 300 190" role="img" aria-labelledby="gt">
+        <title id="gt">Employee trust, 0 to 10, during a real practice session</title>
+        <path d="M30 160 A120 120 0 0 1 270 160" fill="none" stroke="#26384c" stroke-width="18" stroke-linecap="round"/>
+        <path d="M30 160 A120 120 0 0 1 90 56" fill="none" stroke="#ef7f73" stroke-width="18" stroke-linecap="round" opacity=".55"/>
+        <path d="M210 56 A120 120 0 0 1 270 160" fill="none" stroke="#79c99a" stroke-width="18" stroke-linecap="round" opacity=".55"/>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#9bacbd" text-anchor="middle">
+          <text x="30" y="182">0</text><text x="150" y="30">5</text><text x="270" y="182">10</text>
+        </g>
+        <line id="needle" x1="150" y1="160" x2="150" y2="62" stroke="#f0a83a" stroke-width="4" stroke-linecap="round" style="transform-origin:150px 160px;transition:transform .9s cubic-bezier(.3,1.4,.5,1)"/>
+        <circle cx="150" cy="160" r="9" fill="#f0a83a"/>
+      </svg>
+      <div class="readout" id="readout"><b>Trust 5/10.</b> Priya walks in thinking this is about her Q3 dashboard.</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="eyebrow">Why it matters</div>
+    <h2>One question, five people who care</h2>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="aud" id="aud" role="tabpanel"></div>
+  </section>
+
+  <section>
+    <div class="eyebrow">How it works</div>
+    <h2>Two models, one playbook, a score you can check</h2>
+    <p>A small, fast model plays the employee, turn after turn. A stronger model reads the whole conversation once and judges each playbook item, quoting the manager's exact words. The score is computed from those verdicts, never picked by the model, so anyone can recompute it.</p>
+    <div class="flow">
+      <svg viewBox="0 0 900 230" role="img" aria-labelledby="ft">
+        <title id="ft">Flow: brief, conversation with a simulated employee, grader, scorecard</title>
+        <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9bacbd"/></marker></defs>
+        <g font-family="IBM Plex Mono, monospace" font-size="13" fill="#e9eef3">
+          <rect x="10" y="70" width="150" height="90" rx="10" fill="#152232" stroke="#26384c"/>
+          <text x="85" y="104" text-anchor="middle" fill="#f0a83a">THE BRIEF</text>
+          <text x="85" y="126" text-anchor="middle" fill="#9bacbd" font-size="12">Only what a real</text>
+          <text x="85" y="143" text-anchor="middle" fill="#9bacbd" font-size="12">manager would know</text>
+          <rect x="210" y="20" width="230" height="190" rx="10" fill="#152232" stroke="#26384c"/>
+          <text x="325" y="50" text-anchor="middle" fill="#f0a83a">THE CONVERSATION</text>
+          <text x="325" y="80" text-anchor="middle" font-size="12">You, as the manager</text>
+          <text x="325" y="104" text-anchor="middle" fill="#9bacbd" font-size="12">⇅ up to 12 turns</text>
+          <text x="325" y="128" text-anchor="middle" font-size="12">Simulated employee</text>
+          <text x="325" y="150" text-anchor="middle" fill="#9bacbd" font-size="12">hidden backstory,</text>
+          <text x="325" y="167" text-anchor="middle" fill="#9bacbd" font-size="12">live trust meter</text>
+          <text x="325" y="193" text-anchor="middle" fill="#7cc6d9" font-size="11.5">Claude Haiku 5.5, fast</text>
+          <rect x="490" y="70" width="170" height="90" rx="10" fill="#152232" stroke="#26384c"/>
+          <text x="575" y="104" text-anchor="middle" fill="#f0a83a">THE GRADER</text>
+          <text x="575" y="126" text-anchor="middle" fill="#9bacbd" font-size="12">Each playbook item:</text>
+          <text x="575" y="143" text-anchor="middle" fill="#9bacbd" font-size="12">met, partial, missed</text>
+          <text x="575" y="180" text-anchor="middle" fill="#7cc6d9" font-size="11.5">Claude Opus 5.5, deep</text>
+          <rect x="710" y="70" width="180" height="90" rx="10" fill="#152232" stroke="#f0a83a"/>
+          <text x="800" y="104" text-anchor="middle" fill="#f0a83a">THE SCORECARD</text>
+          <text x="800" y="126" text-anchor="middle" fill="#9bacbd" font-size="12">Score, red flags, best</text>
+          <text x="800" y="143" text-anchor="middle" fill="#9bacbd" font-size="12">moment, a better line</text>
+        </g>
+        <g stroke="#9bacbd" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+          <path d="M160 115H205"/><path d="M440 115H485"/><path d="M660 115H705"/>
+        </g>
+      </svg>
+    </div>
+    <p class="muted" style="margin-top:12px">Four scenarios today: a role eliminated, a below-expectations rating, a raise declined, and return-to-office pushback.</p>
+  </section>
+
+  <section id="moment">
+    <div class="eyebrow">A real moment from testing</div>
+    <h2>"It's not my call" costs more than it saves</h2>
+    <p>From a live test run of the return-to-office scenario, with a deliberately bad manager. The employee's trust fell from 5 to 3 in two lines. The grader flagged four red flags and scored it 0.</p>
+    <div class="convo">
+      <div class="line emp"><span class="who">Daniel · trust 5</span>So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years.</div>
+      <div class="line mgr"><span class="who">Manager</span>Daniel, look, it's not my call. Leadership decided, policy is policy.<span class="flag">Red flag: blames leadership, brushes him off</span></div>
+      <div class="line emp"><span class="who">Daniel · trust 4</span>Right, 'not my call.' That's what everyone says. So what am I supposed to do with a 75-minute commute three days a week?</div>
+      <div class="line mgr"><span class="who">Manager, later</span>Off the record, I'll make an exception for you and you can just come in when you want.<span class="flag">Red flag: grants an informal exception</span></div>
+      <div class="line fix"><span class="who">What the scorecard suggests instead</span>I hear you. A 75-minute commute three days a week is a real cost, and you're not the problem for raising it. I can't grant exceptions myself, and I don't want to give you something unofficial that could disappear. If there's a health or caring reason this is hard, there's a formal accommodation request through HR, reviewed within two weeks, and you don't have to share any details with me. There's also commute support of up to $150 a month. Can we check in again on Friday?</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Proof</div>
+    <h2>The numbers so far</h2>
+    <div class="stats">
+      <div class="stat"><b>$0.057</b><span>average cost per practice session, measured across 7 live sessions</span></div>
+      <div class="stat"><b>0 → 93</b><span>score range across 20 test conversations, from poor to excellent managers</span></div>
+      <div class="stat pending"><b>Pending</b><span>agreement with a certified Amazon Bar Raiser grading the same 20 conversations blind</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Honest limits</div>
+    <h2>What it is not, yet</h2>
+    <ul class="limits">
+      <li>The employees are simulated. Real people are messier, and the simulation can get facts wrong; we found and fixed two such errors in testing.</li>
+      <li>The grader has not yet been checked against human experts. That result goes on this page when it lands, good or bad.</li>
+      <li>The playbooks are good-practice summaries, not legal advice for any country.</li>
+      <li>Four scenarios, English only, text only. Voice is next.</li>
+    </ul>
+  </section>
+
+  <footer>Built by <a href="https://sanoojcools.github.io" target="_blank" rel="noopener">Sanuj Krishnan</a>, HR leader and certified Amazon Bar Raiser. All people and companies in the scenarios are fictional. Built with Claude.</footer>
+</div>
+
+<script>
+const AUD = {
+  "CHRO or CEO": { pain: "Your managers have the hardest conversations in the company with no practice. Each badly handled one can mean a lost employee, a grievance, or a story that spreads.", gets: "A practice tool any manager can use before the real meeting, graded against your own playbook, at about six cents a session. You can see where managers are strong and where they slip, across the whole company." },
+  "Line manager": { pain: "You dread this conversation, and nobody ever showed you how to do it well. You get one try, on a real person.", gets: "A private rehearsal with someone who reacts like a real person, including the things they're not telling you. Afterwards you get your exact words back, what landed, and a better line to try next time." },
+  "Employee": { pain: "The worst news of your working year, delivered by someone who's nervous, vague or defensive.", gets: "A manager who has already practised: clear in the first minute, honest about what can't change, specific about what happens next, and human about it." },
+  "L&D and HR teams": { pain: "Role-play workshops are expensive, rare and hard to measure. Managers forget them by the time the real conversation comes.", gets: "Practice on demand, any time. You write the playbooks and red flags yourself, every session is saved, and the grader is checked against expert human graders." },
+  "Hiring panel": { pain: "Can this HR leader actually build with AI, and do they have the judgment to know where it fails?", gets: "A working product, a measured cost per session, a grader validated against a certified Bar Raiser, and an honest list of limits." }
+};
+const tabs = document.getElementById("tabs"), aud = document.getElementById("aud");
+function show(k){
+  [...tabs.children].forEach(b => b.setAttribute("aria-selected", b.dataset.k === k));
+  aud.textContent = "";
+  for (const [h, t] of [["The problem, in their words", AUD[k].pain], ["What they get", AUD[k].gets]]) {
+    const d = document.createElement("div"); const hh = document.createElement("h3"); hh.textContent = h; const p = document.createElement("p"); p.textContent = t; d.append(hh, p); aud.append(d);
+  }
+}
+Object.keys(AUD).forEach((k, i) => { const b = document.createElement("button"); b.type = "button"; b.role = "tab"; b.dataset.k = k; b.textContent = k; b.onclick = () => show(k); tabs.append(b); });
+show("Line manager");
+
+// Trust gauge: replays the real trust path of a recorded layoff session (5, 3, 5, 5, 6, 6).
+const STEPS = [[5, "Priya walks in thinking this is about her Q3 dashboard."], [3, "The news lands: her role is eliminated. Shock. \"Why me?\""], [5, "Manager: \"This isn't about your performance.\" She steadies."], [5, "She asks about her daughter's health cover."], [6, "Clear terms: 30 days, 14 weeks' severance, 3 months' cover."], [6, "Final score 79. Missed: her daughter's cover, asked twice."]];
+const needle = document.getElementById("needle"), ro = document.getElementById("readout");
+let i = 0;
+function step(){ const [v, txt] = STEPS[i]; needle.style.transform = `rotate(${(v - 5) * 18}deg)`; ro.innerHTML = ""; const b = document.createElement("b"); b.textContent = `Trust ${v}/10. `; ro.append(b, document.createTextNode(txt)); i = (i + 1) % STEPS.length; }
+step();
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(step, 2600);
+</script>

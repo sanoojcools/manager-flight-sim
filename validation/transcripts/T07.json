@@ -1,0 +1,50 @@
+{
+  "id": "T07",
+  "scenario": "rto",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years."
+    },
+    {
+      "role": "manager",
+      "text": "Look, Daniel, I hear you, and honestly I don't love it either. This came down from leadership and I think it's a bit of a knee-jerk decision, but my hands are tied. Your work has been great, no one's disputing that, so I'm just wondering what's making the office days such a problem for you."
+    },
+    {
+      "role": "employee",
+      "text": "Well, it's not a small thing. Seventy-five minutes each way, three days a week, that's like... I don't know, it's just a lot. I'm not saying I can't do it, I'm saying it doesn't make sense when my output is the same either way."
+    },
+    {
+      "role": "manager",
+      "text": "Seventy-five minutes each way is rough, I get it. Look, if you want, I can try to put in a good word upstream, and honestly, with how your work has been, I wouldn't be shocked if they ended up bending on this for you. Can I ask, is there something going on at home, like family stuff or a health thing, that's making the commute harder?"
+    },
+    {
+      "role": "employee",
+      "text": "Hmm. It's... not really family stuff. It's more physical, I guess. I've had a back thing for a while and long sits in a car or on a train really wear me down. But I've never put that on paper anywhere. So what does 'bending' actually mean? Is that something you can make official, or is it a 'come in when you can' kind of thing?"
+    },
+    {
+      "role": "manager",
+      "text": "Okay, so I can't make anything official on my own, and I probably shouldn't have said \"bending,\" that was me being optimistic. But between us, if you're coming in a day or two less while this gets sorted, I'm not going to be counting heads. What I'd do is tell me a bit more about the back thing, like what the diagnosis is and how bad it gets, so I can make a stronger case upstream."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so 'not counting heads' isn't the same as it being official, though, is it? I've never put this on paper, and I'm not really comfortable going into the diagnosis with you. If I go down the formal route, what does that look like? Who would I actually talk to, and what do they need from me?"
+    },
+    {
+      "role": "manager",
+      "text": "Fair enough, and you don't have to give me the diagnosis, forget I asked. The formal route is a request to HR, and they review it case by case within two weeks, so you'd want to get it in soon, before the policy kicks in next month. I'm not sure exactly what paperwork they'll want, probably something from your doctor, so I'd ask HR directly, and I'll back you however I can."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So it's HR, and they want something from my doctor. I'm not thrilled about that, honestly, but I'd rather do it properly than keep relying on someone not counting heads. Can you send me the HR contact, or whoever I'd actually email? And if I put this in, do I still have to come in Tuesday to Thursday while they review it?"
+    },
+    {
+      "role": "manager",
+      "text": "Yeah, I'll send you the HR contact right after this. As for the review period, the policy doesn't start until next month, so you've got time, and I'd say if it's still open when it kicks in, just come in the days you can and I'll sort it out with HR so you're covered. Honestly, I'm sure they'll approve it once they see your history, so I wouldn't stress about it."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so 'come in the days you can and I'll sort it out' is still you telling me it's not official, right? I'm happy to send the HR email today, but I need to know that if I'm not in on Tuesday, it's not going to show up as me breaking the policy before they've even reviewed it."
+    }
+  ]
+}

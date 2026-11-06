@@ -1,0 +1,50 @@
+{
+  "id": "T04",
+  "scenario": "rto",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years."
+    },
+    {
+      "role": "manager",
+      "text": "Well, the policy is the policy, Daniel. Starting next month, everyone is in the office Tuesday through Thursday, and that applies to the whole company. I understand you feel your remote work has been fine, but the decision wasn't based on individual performance, so I'm not sure that point changes much."
+    },
+    {
+      "role": "employee",
+      "text": "Right, so my three years don't count for anything. That's a pretty flat way to put it. Look, I'm not trying to be difficult, but 'the policy is the policy' isn't really an answer to why I'd have to change how I work when nothing's gone wrong."
+    },
+    {
+      "role": "manager",
+      "text": "Nobody said your three years don't count, Daniel, I just said the decision wasn't about individual performance. The company's reasoning is about having everyone together on the same days, and I'm not the one who set that, so I can't really debate the why with you. What I can tell you is that there's a formal accommodation process through HR for disability or caring needs, and there's commute support of up to $150 a month."
+    },
+    {
+      "role": "employee",
+      "text": "A $150 commute stipend. Okay. So the answer to me is basically, go fill out a form and hope HR agrees my situation counts? I'm 75 minutes each way, and that's before anyone asks whether it's a problem for me. Did you ask me anything about it, or is that the whole plan?"
+    },
+    {
+      "role": "manager",
+      "text": "Well, I didn't ask because the process is set up for specific situations, and I can't grant exceptions myself, so I wasn't sure what a conversation about it would change. The accommodation request is only for disability or caring needs, and HR reviews those case by case within two weeks, so if either applies to you, that's the route. Otherwise, the commute support is what's available, and I can't promise anything beyond that."
+    },
+    {
+      "role": "employee",
+      "text": "So you didn't ask, because you figured it wouldn't change anything. That's kind of the problem. I'm not going to fill out a form to prove I'm allowed to keep doing a job I'm good at. If this is the best the company has, I'll be honest, I'm starting to wonder whether I should be looking around."
+    },
+    {
+      "role": "manager",
+      "text": "I hear that you're frustrated, Daniel, but I'd be careful about jumping to leaving, since I can't change what the policy says. If you don't think either accommodation category applies, then the commute support is the option I have, and I can't promise anything beyond that. If you want, I can tell you how to start the HR request, but whether to do it is up to you."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So the offer is a stipend, a form, and a warning not to think about leaving. I've been here a long time and I've never once had someone sit with me for two minutes about what this actually costs me. Do you know what 75 minutes each way does to someone on a bad day? No, of course you don't, because you didn't ask."
+    },
+    {
+      "role": "manager",
+      "text": "Well, I wasn't trying to warn you off thinking about it, Daniel, I just meant I can't change the policy from my side. I can't promise it changes anything, but if you want to tell me what the commute does to you, I can listen. And if any of it falls under caring needs or health, that's what the HR request is for."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Thanks for saying that. It's my back. I've had a disc problem for a few years, and sitting in a car for an hour and a half each way, then sitting at a desk all day, is hard on it. Some days I'm fine. Some days I can barely get out of the car. I've never put it on paper because I didn't want it to become the thing people see when they look at me."
+    }
+  ]
+}

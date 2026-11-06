@@ -1,0 +1,50 @@
+{
+  "id": "T09",
+  "scenario": "raise_denied",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Thanks for making time. So, have you had a chance to think about the raise I asked about?"
+    },
+    {
+      "role": "manager",
+      "text": "Yeah, I've thought about it, and honestly, I'd love to give you the 15%, but my hands are tied because leadership froze off-cycle budget and frankly they don't get how hard it is to keep people like you. What I can do is push for something strong at the next review in four months, and I'll make sure you're taken care of."
+    },
+    {
+      "role": "employee",
+      "text": "Four months. I have a verbal offer that's twenty percent above what I make right now, and you're asking me to wait on 'taken care of'. Can you tell me what the budget situation actually is, or is that off the table?"
+    },
+    {
+      "role": "manager",
+      "text": "Look, the budget is zero for off-cycle this quarter, that part is real, but between you and me, if you come back with that offer in hand, I'm pretty sure I can get leadership to bend. I'd just hate to lose you over timing, so can I ask, is there something going on at home that's making the money feel urgent right now?"
+    },
+    {
+      "role": "employee",
+      "text": "No, nothing's going on at home, and I'd rather not get into that. You just said the budget is zero this quarter, but now you're saying leadership might bend if I bring in an offer. So which is it? If it's possible, why wasn't it possible when I asked a month ago?"
+    },
+    {
+      "role": "manager",
+      "text": "Fair point, and I didn't mean to confuse things. The budget really is zero, but I think if you were about to walk, leadership would find a way, they always do when someone's actually leaving. Honestly, I can also tell you the promotion to Senior is basically yours if you take on the payments migration, so I'd hate for you to leave before that happens."
+    },
+    {
+      "role": "employee",
+      "text": "Basically yours? That's not a date, and it's not something I can take to anyone. If the Senior promotion is real, I need the timeline and the criteria in writing. And if leadership would find money the moment I walk out, why is the answer still no today?"
+    },
+    {
+      "role": "manager",
+      "text": "Okay, fair, I got ahead of myself on the promotion. Realistically it's something like six to twelve months if you lead the payments migration and it goes well, but I can't promise it, and I'd have to check on putting criteria in writing. As for why it's no today, honestly it's just how the process works, and I don't love it either."
+    },
+    {
+      "role": "employee",
+      "text": "So it's six to twelve months, you can't promise it, and you'll 'check' on writing it down. That's a lot of maybe. Here's what I need: if I take on the payments migration, what exactly has to be true for me to be Senior, and can you send that to me by Friday?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, I can get you something by Friday, and honestly I'll just tell you what I'd want to see: you lead the migration, it ships on time, and your work shows you're operating at Senior level. I'll write that up, and if you deliver, I'll make sure the promotion happens, so you don't have to worry about it."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Friday, in writing, with the criteria. But 'I'll make sure it happens' isn't a date, and I've heard a lot of 'I'll make sure' today. Can you put a rough date in that document too, even if it's a range? And can I ask you something directly: what would you need to see from me to fight for the 20% number, not just the promotion?"
+    }
+  ]
+}

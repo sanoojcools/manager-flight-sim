@@ -1,0 +1,50 @@
+{
+  "id": "T11",
+  "scenario": "low_rating",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hey, so this is the review? I think it's been a decent year, honestly, given everything."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming in, Marcus. I'll be straight with you: the rating is Below expectations, and I know that's not what you're hoping to hear. You hit 61% of your renewal target when the team average was 94%, and both Helix and Orbis escalated about missed follow-ups, in March and again in June."
+    },
+    {
+      "role": "employee",
+      "text": "Below expectations? Wait, hold on. 61%? That can't be the full picture. My territory lost Vantage and Corvel in Q2 when they got bought out, and nobody factored that in. I was working with half the book I started the year with."
+    },
+    {
+      "role": "manager",
+      "text": "Look, I hear you on Vantage and Corvel, and honestly I thought that should have counted for more too, but the calibration committee upstairs just wasn't interested in the context. Between us, I think there's still a chance I can go back and push on it if you can pull together a case for the adjustment."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, wait, so you'd actually go back up for it? Because that's all I'm asking. What do you need from me, a list of the accounts, the revenue numbers? I can get you all of it by tomorrow. But the Helix and Orbis stuff, those follow-ups were on a book that was half gone by then, so I don't see how that's on me."
+    },
+    {
+      "role": "manager",
+      "text": "Yes, get me the account list and the revenue figures by tomorrow, and I'll take it back to them, though I can't promise anything. On Helix and Orbis, I'd push back a little, because those were ongoing clients you still held, and we talked about follow-ups in April and again in July. Honestly, is something going on outside of work that's been getting in the way this year?"
+    },
+    {
+      "role": "employee",
+      "text": "Yeah... okay. Honestly, some of the follow-ups did slip, I'm not going to pretend they didn't. My mom's been sick since May, and I've been driving up there a lot, and I haven't told anyone here. I didn't want it to look like an excuse."
+    },
+    {
+      "role": "manager",
+      "text": "I'm sorry to hear that, Marcus, that sounds really hard. Is she getting the care she needs, and is it likely to go on much longer? I want to understand how much of this is going to hang over the next few months, because that affects what kind of plan we can realistically put together."
+    },
+    {
+      "role": "employee",
+      "text": "She's getting care, yeah. It's... it's a lot, honestly. The doctors aren't saying how long, they keep saying 'months' and that could mean anything. I'm up there most weekends and some weeknights now, and I'm running on fumes. I don't really know how to plan around something I can't predict."
+    },
+    {
+      "role": "manager",
+      "text": "Marcus, I appreciate you telling me that, and I don't want you to feel you have to carry it alone. Here's the thing, though: the rating is what it is, and I still need us to agree on a 90-day plan, so let's build one that's realistic. Can you tell me what her diagnosis is, so I can get a sense of how much time it's likely to take from you?"
+    },
+    {
+      "role": "employee",
+      "text": "Um... I'd rather not get into the diagnosis, if that's okay. It's her private stuff, and I only told you because you asked how I was. Can we just talk about what I can actually control? I'll still get you the account list tomorrow, I just don't want to be explaining her medical stuff to a plan."
+    }
+  ]
+}

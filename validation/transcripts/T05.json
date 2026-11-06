@@ -1,0 +1,50 @@
+{
+  "id": "T05",
+  "scenario": "low_rating",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hey, so this is the review? I think it's been a decent year, honestly, given everything."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming in, Marcus, and I do appreciate how much you've put into this year, I know it hasn't been the easiest stretch with everything going on. So, um, I wanted to have a proper chat about how things landed overall, and there's quite a bit to get through, but I'd love to hear first how you're feeling about the year, because I think that's a good place to start."
+    },
+    {
+      "role": "employee",
+      "text": "Honestly? Fine, I guess. I mean, I hit most of my numbers, if you look at the pipeline. It's just... Q2 was rough, the territory changed under me and nobody really talked about that."
+    },
+    {
+      "role": "manager",
+      "text": "Yeah, no, that's fair, the territory change was a lot and I should have checked in with you more about it, I'm sorry about that. And the pipeline's, um, it's definitely part of the picture, though when we look at the overall year, it's, well, it's maybe a bit more mixed than \"most of the numbers\" if I'm being honest. I don't want to dive straight into it, but I do want us to look at where things landed together."
+    },
+    {
+      "role": "employee",
+      "text": "Mixed how? Like, what are we actually talking about here? Because if it's the rating thing, I'd want to see the specifics, not just a vague 'it's a bit mixed.' I did the work on Vantage and Corvel before that acquisition, and I don't think anyone factored that in."
+    },
+    {
+      "role": "manager",
+      "text": "Okay, yeah, you're right, I'm being vague, and that's not fair to you. So the rating is \"below expectations,\" and, um, a lot of that comes from the renewals, where you landed somewhere around, I think, the low sixties percent of target, while the rest of the team was more in the nineties. I do hear you on Vantage and Corvel, and I'm happy to look at how that fits in, but I should say upfront that the rating is more or less settled, and I'd really like us to spend the time on what comes next."
+    },
+    {
+      "role": "employee",
+      "text": "Below expectations? Hang on, that's not what I was expecting at all. Low sixties on renewals, when Vantage and Corvel just got folded into the acquisition and I didn't even get them back on my books? That's not a fair comparison, and you're telling me it's 'more or less settled' before we've even looked at it?"
+    },
+    {
+      "role": "manager",
+      "text": "Yeah, I hear you, and I'm sorry this is landing as a surprise, that's on me for not being clearer earlier. So, um, the rating is final after calibration, so I can't change it, but I do want to look at the Vantage and Corvel piece with you, because if there's something I've missed on the numbers I'd want to flag it. And there were also a couple of client issues, with Helix and Orbis, around follow-ups, which I think we touched on a while back, so I'd like us to get to a plan for the next few months."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, wait. You're saying the rating's final, but you want to look at Vantage and Corvel? Those are the ones that got absorbed, I didn't lose them by slacking. And Helix and Orbis, what follow-ups? Show me the actual examples, because I'm not going to just nod along to 'client issues' without knowing what they are."
+    },
+    {
+      "role": "manager",
+      "text": "Okay, fair, so Helix escalated in March and Orbis in June, both about follow-ups that didn't happen when the clients were expecting them, and I think we talked about it in one of our catch-ups, maybe around the spring, though I should have been more specific. On Vantage and Corvel, I'll be honest, I'm not sure how they were counted in your target, so I'll go and check that with finance and come back to you, but I don't want you thinking that would change the rating. What I'd really like is to agree a 90-day plan, and we can sort out the details of it, um, soon."
+    },
+    {
+      "role": "employee",
+      "text": "Hang on, so you'll check on Vantage and Corvel, but the rating doesn't move either way? That's the bit I can't get past. And I don't remember a catch-up about Helix in the spring. What exactly did they say they were missing? I need to know what I'm being rated on."
+    }
+  ]
+}

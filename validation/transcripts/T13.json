@@ -1,0 +1,50 @@
+{
+  "id": "T13",
+  "scenario": "rto",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years."
+    },
+    {
+      "role": "manager",
+      "text": "I hear you, Daniel, and your work has been great, that's not in question. The policy is company-wide, so starting next month everyone's in the office three fixed days a week, Tuesday through Thursday, and I don't have the authority to make exceptions on my own. If there's a situation like a disability or caring responsibilities, there's a formal accommodation request you can file with HR, and they review those case by case. Is there something going on that you'd want to talk through?"
+    },
+    {
+      "role": "employee",
+      "text": "Honestly? Yeah, there is. It's not the kind of thing I usually bring up at work. I've got a back condition, and the commute, 75 minutes each way, sitting in traffic, it's been getting bad. I haven't told anyone here about it. I'm not sure how that would go over."
+    },
+    {
+      "role": "manager",
+      "text": "Thank you for trusting me with that, Daniel, and I'm sorry you've been dealing with it. A back condition is exactly the kind of thing the accommodation request is for, and you don't need to worry about how it'll be received; HR handles these confidentially and I'll support you however I can. I'd encourage you to file the request soon, and it'd help to have documentation from your doctor ready. What would be the most useful thing for me to help with as you put that together?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Yeah, that helps, I think. I've been putting off the paperwork because it feels like admitting I can't handle the job the way everyone else does. Do you know how long HR usually takes on these? I can't keep doing this drive for months."
+    },
+    {
+      "role": "manager",
+      "text": "HR reviews these case by case within two weeks, so it's not a months-long wait. And asking for an accommodation isn't admitting you can't do the job, Daniel, it's using a process that exists so people can keep doing great work like yours. Get the request in as soon as you can, and let me know if you hit any snags with it."
+    },
+    {
+      "role": "employee",
+      "text": "Two weeks, okay. That's better than I was expecting. But the policy starts next month, and I don't want to be driving 75 minutes each way in the meantime while HR is still reviewing it. Is there any way I can work from home until they decide?"
+    },
+    {
+      "role": "manager",
+      "text": "Since the policy doesn't start until next month, you're not required to be in the office on that schedule yet, so file the request now and the review should wrap up well before the change kicks in. I can't promise anything beyond that on my own, but I'm happy to keep things as they are for you while it's pending. Does that work for you?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So I'm good to keep working from home while it's pending? Is that something you can actually put in writing, or is it just you saying it right now? I'd rather not get caught out in a month because it was a verbal thing."
+    },
+    {
+      "role": "manager",
+      "text": "Fair question, Daniel. Right now the policy hasn't started, so nothing you're doing is out of line, but I'll send you an email today confirming that you're staying remote while your request is pending, so you have it in writing. I'd also mention in the HR request that I've supported it, so everything lines up on their end."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, that's a relief. Thank you, I mean it. I'll get the request filed this week, and I'll look out for that email. Honestly, I didn't expect this to go as smoothly as it has."
+    }
+  ]
+}

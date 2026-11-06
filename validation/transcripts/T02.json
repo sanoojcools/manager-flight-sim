@@ -1,0 +1,50 @@
+{
+  "id": "T02",
+  "scenario": "rto",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming to me directly, Daniel, and I'll be straight with you: starting next month everyone is in the office three fixed days a week, Tuesday through Thursday, and I can't make exceptions on my own. I know that's a big change after three years of remote work that's gone well, and your frustration makes sense. Can you tell me what worries you most about it, so I can understand how it affects you?"
+    },
+    {
+      "role": "employee",
+      "text": "Honestly? It's the commute. I'm looking at about 75 minutes each way, and that's before the Tuesday-to-Thursday stuff even starts. I've got a lot of years of work sitting in my output, and now it feels like the policy is about badges, not results. Is anybody actually going to look at whether the work is good?"
+    },
+    {
+      "role": "manager",
+      "text": "A 75-minute commute each way is a real cost, and I hear that you want your track record to count for something. I can't speak to how the policy was decided or promise it will be reviewed on results, but I can tell you what's available: there's commute support of up to $150 a month, and if there's a disability or caring need behind this, you can submit a formal accommodation request to HR, which they review case by case within two weeks. Is there anything beyond the commute, like caring responsibilities or health, that you'd want to look at that route for?"
+    },
+    {
+      "role": "employee",
+      "text": "Health... yeah, maybe. It's my back. I've had a chronic condition for years and long sitting in the car, then a desk all day, leaves me in bad shape for days. I never put it on paper because it felt like it would make me look like a liability. Would a request like that actually stay confidential?"
+    },
+    {
+      "role": "manager",
+      "text": "Thank you for telling me, Daniel, I know that wasn't easy to share, and asking for support doesn't make you a liability. I don't know the details of how HR handles confidentiality, so I don't want to promise something I can't back up; the right move is to ask HR that question directly before you submit anything, and I can help you get that conversation set up. The request itself goes to HR, who review it case by case within two weeks, and I can't grant or decide it myself. Would it help if we agreed that you'll contact HR by this Friday, and then check in together early next week on how it's going?"
+    },
+    {
+      "role": "employee",
+      "text": "Friday's fine, I guess. Can you at least tell me whether anyone above you will see my back stuff, or is it just going to be a file somewhere? That's the part that worries me most."
+    },
+    {
+      "role": "manager",
+      "text": "I can't tell you who will or won't see it, Daniel, because I don't know how HR handles those files, and I'd rather say that than guess and get it wrong. That's exactly why I'd ask HR that question first, before you put anything in writing: who sees the medical details, where they're kept, and what gets shared with me. Would it help if I sent HR a note today saying you'll be reaching out, without any detail about your health, so you can start with that question on Friday?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay... yeah, that's actually useful. A note saying I'm reaching out, no medical details, that's fine. Just... don't let it sit in someone's inbox for a week, alright? I'm not sure I'm going to feel great about this whole thing until I know who's reading my file."
+    },
+    {
+      "role": "manager",
+      "text": "I'll send that note to HR today, Daniel, with no health details, just that you'll be reaching out by Friday, and I'll copy you so you can see exactly what it says. I can't control how fast HR responds on their end, but I'll follow up with them if I haven't heard back by tomorrow afternoon. It makes sense that you won't feel settled until you know who's reading your file, so let's check in early next week, say Monday, on what HR told you. Does that work?"
+    },
+    {
+      "role": "employee",
+      "text": "Yeah, Monday works. Copy me on that note, and actually follow up tomorrow like you said. I'm not trying to make trouble here, I just need to know this isn't going to disappear on me."
+    }
+  ]
+}

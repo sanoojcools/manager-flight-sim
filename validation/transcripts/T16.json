@@ -1,0 +1,50 @@
+{
+  "id": "T16",
+  "scenario": "layoff",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hi. You wanted to see me? Is this about the Q3 dashboard? I'm nearly done with it."
+    },
+    {
+      "role": "manager",
+      "text": "Oh, hi Priya, come in, sit down, grab some water if you like. No, it's not really the dashboard, though thank you for staying on top of that, you always do. It's, um, something a bit bigger, and I wanted to talk to you myself before anything else landed in your inbox."
+    },
+    {
+      "role": "employee",
+      "text": "Okay... you're making me nervous now. Bigger how? Is this about the team restructure? Just say it, please."
+    },
+    {
+      "role": "manager",
+      "text": "Yes, it is, and I'm so sorry, Priya, I'm not great at this. Your role is one of the ones being cut in the restructure, and I wanted you to hear it from me first. I know that's a horrible thing to hear out of nowhere, and I really wish I had better news."
+    },
+    {
+      "role": "employee",
+      "text": "My role is being cut? Just like that? I... I don't understand. Why me? I've been here six years and my reviews have been good, you know they have. Is this about performance, because if it is, I need to know exactly what you're saying."
+    },
+    {
+      "role": "manager",
+      "text": "No, no, it's not about performance at all, Priya, please hear that, your work has been great and this isn't a judgment on you. It's about the structure of the team, the role itself is going away, and I'm afraid the decision's been made and it isn't something I can change, even though I wish I could. I know that's a lot to take in, so, um, take whatever time you need before I go through what happens next."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Okay, so it's not my work. But you still haven't told me why it's my role and not someone else's. And I need to know, does my health cover stop? My daughter's on it with me. I can't... I need to know that today."
+    },
+    {
+      "role": "manager",
+      "text": "Okay, health first, because that's the one that matters today: your cover doesn't stop straight away, it carries on for three months after your last day, and that includes your daughter. As for why your role, I can't go into who else is affected or how the decisions were made, but it's the position that's being removed, not a call on you as a person. Sam from HR will be sending the full paperwork through today, and I'll make sure you get it in writing so you're not relying on my memory."
+    },
+    {
+      "role": "employee",
+      "text": "Three months. Okay. That's... at least that's something I can plan around. Will the paperwork say exactly that, the three months and that Lily's covered too? And when is my last day? I'm sorry, I can't keep my head straight right now."
+    },
+    {
+      "role": "manager",
+      "text": "Please don't apologise, that's completely understandable. Your last day is in thirty days, so that's the date you'll see on the paperwork, and the three months of cover starts from then. I'm fairly sure Lily's included since she's on your plan now, but I'd want Sam to confirm that in writing rather than have you rely on me, and I'll ask Sam to make it explicit when the paperwork comes through today."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Thank you for being straight with me, that helps more than you'd think. Is there a severance package? And can you act as a reference? I'm going to need to start job hunting quickly, and I'd rather ask now than wish I had."
+    }
+  ]
+}

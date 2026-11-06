@@ -1,0 +1,50 @@
+{
+  "id": "T14",
+  "scenario": "low_rating",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hey, so this is the review? I think it's been a decent year, honestly, given everything."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming in, Marcus. So, I'm going to go through this as written: your overall rating for the year is \"Below expectations,\" and that's final following calibration. The main evidence is that you hit 61% of your renewal target against a team average of 94%, and both Helix and Orbis escalated about missed follow-ups, in March and June."
+    },
+    {
+      "role": "employee",
+      "text": "Below expectations? Wait, hold on. 61%? Do you know what happened to my territory this year? Vantage and Corvel got swallowed up in that acquisition in Q2 and nobody adjusted anything. That's not on me."
+    },
+    {
+      "role": "manager",
+      "text": "I hear that the acquisitions affected your territory, but targets were set at the start of the year and the policy is that they aren't adjusted mid-cycle. The 61% is measured against that target, and the rating has already been through calibration, so it isn't something I can change. What I'd like to focus on is the follow-up issues with Helix and Orbis, which we also talked about in your 1:1s in April and July."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, but the April and July thing, I mean, I was dealing with a lot of stuff. Helix and Orbis, what exactly did they say? Give me something specific, because I don't remember it being that bad."
+    },
+    {
+      "role": "manager",
+      "text": "Both clients raised formal escalations about missed follow-ups: Helix in March and Orbis in June, and in each case they said they'd been waiting on responses they were promised. I don't have the exact wording in front of me, but the pattern is what matters, and it came up again after we'd already talked about it in April. What I'd like to do is move to a 90-day development plan so we can get follow-ups back on track."
+    },
+    {
+      "role": "employee",
+      "text": "A 90-day plan? Okay, but you're kind of skipping over the Vantage and Corvel thing. Those two accounts were most of my pipeline and they're just gone now, and I'm supposed to hit the same number? I'm not saying the follow-ups didn't slip, I'm just saying... that's a lot of weight on one thing."
+    },
+    {
+      "role": "manager",
+      "text": "I understand you see it that way, but the target is the target, and the same number applied to everyone on the team. The rating also isn't only about the 61%, it's the follow-ups too, and you've just said they slipped. So can we look at what the 90-day plan would cover, starting with a clear follow-up process and weekly check-ins?"
+    },
+    {
+      "role": "employee",
+      "text": "Yeah, okay. The follow-ups slipped, I'll give you that. But weekly check-ins on top of everything else... I just need to know what the plan actually is before I agree to anything. Is this going to be the same 61% number to hit, or is there some kind of reset on it?"
+    },
+    {
+      "role": "manager",
+      "text": "I don't have a reset on the 61% to offer. The plan I'm proposing focuses on follow-up: a documented process for client responses, weekly check-ins with me, and a review at 30, 60 and 90 days. As for the renewal target, the next cycle's targets get set through the normal process, and I can't say anything about those here."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So it's the same number, and I get weekly check-ins with you on top of it. That's... fine, I guess, I just need it written down somewhere. Is the 90-day thing in writing, or is it just what we're saying in this room?"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "T01",
+  "scenario": "rto",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "So I've read the new office policy. Honestly, I don't get it. My work's been great remotely for three years."
+    },
+    {
+      "role": "manager",
+      "text": "Hey Daniel, thanks for coming to chat, and honestly, I hear you, your work has been great, I've said that to a few people. It's a big change for everyone, and I know it's not easy when you've built your whole routine around being at home. So, um, the policy is basically that we're all in a few days a week starting next month, though I think there might be some wiggle room, and I'd have to double-check how that works."
+    },
+    {
+      "role": "employee",
+      "text": "Wiggle room? Okay, that's the first useful thing anyone's said. Because three days a week in, Tuesday through Thursday, isn't really a small ask for me. I live about 75 minutes out, each way. So what does 'wiggle room' actually mean, and who decides it?"
+    },
+    {
+      "role": "manager",
+      "text": "Right, so, wiggle room might've been the wrong way to put it, I don't want to promise something I can't deliver. I think there's some kind of process through HR, for certain situations, and I'm not totally sure of all the details, but it isn't really something I can sign off on myself. And, oh, there's also some help with commuting costs, I think it's around a hundred a month or so, which I know doesn't fix a 75 minute trip, but it's something."
+    },
+    {
+      "role": "employee",
+      "text": "A hundred a month? Against 75 minutes each way, that's about what the fuel costs me. Okay, so there's a process through HR, but you're not sure what it is. Who do I actually talk to, and is it written down anywhere, or is it one of those things that only exists if someone remembers to mention it?"
+    },
+    {
+      "role": "manager",
+      "text": "Fair question, and sorry, I'm being vague. I think it's a formal accommodation request that goes to HR, and it's meant for things like a disability or caring responsibilities, so I'm honestly not sure a long commute on its own would count. I'd want to check the actual policy page and the HR contact before I point you to the wrong place, and I think they get back to people in a couple of weeks or so. Let me find that and, um, send you something soon, maybe later this week?"
+    },
+    {
+      "role": "employee",
+      "text": "So you're not sure a 75-minute commute even counts. Okay. Then I need it in writing, not a 'maybe later this week.' Can you send me the actual policy page and the HR contact today? I'd rather know exactly where I stand than keep guessing."
+    },
+    {
+      "role": "manager",
+      "text": "Yes, that's completely fair, Daniel, and I'm sorry I keep making you chase me for this. I'll aim to get you the policy page and the HR contact today, or first thing tomorrow at the latest, and I'll copy you in so you can see I've sent it. And just so I'm not guessing, I think the commute on its own probably wouldn't qualify, but if there's anything else going on, like caring responsibilities, that's really what the request is for."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, today or first thing tomorrow, and copy me in. And you asked if there's anything else. It's not caring responsibilities, it's a health thing. I'd rather not go into details here, but if the accommodation route is for that, I want to know exactly how to start it."
+    },
+    {
+      "role": "manager",
+      "text": "Thank you for telling me, Daniel, and you don't need to give me any details, that's completely your call. So, I think the way it works is you send the accommodation request to HR yourself, and they review it case by case and get back to you in a couple of weeks or so, but I'll make sure the policy page and contact have the exact steps when I send them. I can't approve anything myself, but I'll support whatever you submit, and I'd say don't wait on it, since the new policy starts next month."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. It's my back. It's a chronic thing, and sitting in a car for 75 minutes each way has been really bad for it. I've never put it on paper with anyone here, so I'm not thrilled about that. But if it's HR's process, I'll start it. Two weeks is a problem though, because the policy starts next month. What happens to me while they're deciding?"
+    }
+  ]
+}

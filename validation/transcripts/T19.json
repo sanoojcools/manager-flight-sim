@@ -1,0 +1,50 @@
+{
+  "id": "T19",
+  "scenario": "layoff",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hi. You wanted to see me? Is this about the Q3 dashboard? I'm nearly done with it."
+    },
+    {
+      "role": "manager",
+      "text": "Hi Priya, thanks for coming in, and no, it's not about the dashboard, you can put that aside for now. I'm afraid I have difficult news: your role is being eliminated as part of a restructuring of the analytics team, and the decision has been made."
+    },
+    {
+      "role": "employee",
+      "text": "Eliminated? Wait, what... I'm sorry, I need a second. Why me? I've had good reviews every year, I don't understand. Is this about performance?"
+    },
+    {
+      "role": "manager",
+      "text": "No, it's not about performance, your reviews have been great, and honestly I fought this one upstairs because I think leadership got it wrong. I wish I could tell you it might still change, and who knows, if you make a strong case in the next few days, maybe there's a chance."
+    },
+    {
+      "role": "employee",
+      "text": "A strong case? So it's not decided, then? You just said the decision has been made. I don't understand what I'm supposed to be making a case for. And my son's health cover runs through this job, so I need to know what happens to that. Is there anything in writing about this?"
+    },
+    {
+      "role": "manager",
+      "text": "Sorry, I put that badly, the decision is final and I shouldn't have suggested otherwise. On the health cover, it continues for three months after your last day, which is 30 days from now, and Sam from HR will send the written terms today, including severance of 14 weeks' pay and outplacement support. Can I ask what's going on with your son, is it something serious? I just want to understand what you're dealing with."
+    },
+    {
+      "role": "employee",
+      "text": "He's nine. He has asthma, and he needs his inhaler and his check-ups, so yes, it matters. Three months is... okay, that helps a bit. But I need Sam's email in writing, today, not 'soon'. And I'm still trying to get my head around the fact that you said there was a chance, then took it back."
+    },
+    {
+      "role": "manager",
+      "text": "I'm sorry for the mix-up, Priya, that was on me. Sam will send everything in writing today, and I'll check in with Sam after lunch to make sure it's gone out. Honestly, the whole thing is a mess and I'm sure you'll land somewhere better, and if the outplacement people can't find you something quickly, I'll make some calls myself and get you a job lined up."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Thank you for owning the mix-up. But you can't promise me a job, can you? If you're going to make calls, I need that in writing too, not just a 'I'll try'. Can you tell me what the outplacement people actually do, and who I talk to first?"
+    },
+    {
+      "role": "manager",
+      "text": "Fair point, Priya, I got ahead of myself, and I can't promise you a job or put that in writing, so please don't count on it. What I do know is that outplacement is there to help with your r\u00e9sum\u00e9, interview prep and job search strategy, and Sam's paperwork should say who your first contact is. I'll ask Sam to make sure that name is in today's email."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Thank you for not dressing that up. Please make sure Sam's email has the first contact's name and a time I can call, because I'll be sitting at my desk wondering otherwise. And I'd like the severance terms and the health cover dates in the same email, in plain writing."
+    }
+  ]
+}

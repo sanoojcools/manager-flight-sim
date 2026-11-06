@@ -1,0 +1,50 @@
+{
+  "id": "T15",
+  "scenario": "raise_denied",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Thanks for making time. So, have you had a chance to think about the raise I asked about?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, I've looked into it, and I have to be upfront that off-cycle increases aren't something we can do right now, since there's no budget for them this quarter. Fifteen percent is also well outside what the policy supports for someone in the middle of their band, and I'm not sure the comparison to other companies changes that. The next review cycle is in four months, and I can recommend an above-average increase then, but I can't tell you what the number will be."
+    },
+    {
+      "role": "employee",
+      "text": "Four months. So you're telling me the answer is no, and the best case is a maybe in four months. I have an offer on the table at about twenty percent more, and I need to know if I should take it seriously. Is there any version of this where you can tell me what's actually possible?"
+    },
+    {
+      "role": "manager",
+      "text": "Well, I'd point out that an offer isn't the same as a guaranteed outcome, and I can't match it or negotiate against it, since that's not how our process works. What I can say is that the promotion to Senior is realistic in six to twelve months if you lead the payments migration, and I'd recommend you for an above-average increase at the next cycle. Beyond that, I'm not able to give you a number or a commitment."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so 'realistic' in six to twelve months. That's a range, not a promise. If I turn down that offer, what exactly do I have to show you, and by when, to get Senior?"
+    },
+    {
+      "role": "manager",
+      "text": "Well, I can't set out a formal checklist, since the promotion decision goes through a committee and I don't control the outcome. What I can say is that leading the payments migration is the main thing, and that means owning it from planning through delivery, not just contributing to it. I'd also point out that \"by when\" depends on the migration timeline, so I can't give you a firm date, and I'd be careful about treating this as a guarantee."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so the main thing is leading the migration, but there's no date and no checklist. I'm not trying to trap you here. I just need to know what the committee actually looks at, because right now I'm being asked to bet my career on something you can't describe."
+    },
+    {
+      "role": "manager",
+      "text": "Well, I'd push back a little on \"bet your career,\" because I'm not asking you to turn anything down, and I can't speak for everything the committee weighs. What I do know is that they look for scope, ownership, and results at the next level, which is why leading the migration matters, and I'd be glad to put that in writing as my recommendation. Beyond that, I can't give you more detail than I've already shared."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Then I'd like that recommendation in writing, the scope and the committee criteria you just listed, so I'm not relying on memory of this conversation. Can you send that to me by Friday?"
+    },
+    {
+      "role": "manager",
+      "text": "Well, I can put together a summary of my recommendation and the general criteria I mentioned, scope, ownership, and results, and I can get that to you by Friday. I'd point out that it will reflect my recommendation only, not a commitment from the committee, so I'd want that to be clear in the wording. I'm not able to put a number or a promotion date in it."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so you'll put the recommendation in writing, but no number and no date. That's fair that you can't promise the committee, but I need to see it in writing before I make any decision. Friday, first thing, and I'd like it to name the migration as the thing you're recommending me for."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "T20",
+  "scenario": "raise_denied",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Thanks for making time. So, have you had a chance to think about the raise I asked about?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, I have, and I'd rather be direct with you: I can't get a 15% off-cycle increase approved, because there's no budget for off-cycle raises this quarter. I also want you to know that I see you as a strong performer, your 'Exceeds' rating reflects that, and I take it seriously that you're talking to other companies. Before I lay out what I can do, can you tell me what's driving the request for you right now?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay, well, I appreciate you being straight with me. But I'm not going to pretend this is just about the number. I have an offer on the table at about 20% more, and I need to know if this place is going to make it worth staying. Honestly, what's driving it is that I've been doing senior-level work for a while and I don't see a path to Senior."
+    },
+    {
+      "role": "manager",
+      "text": "Thank you for telling me that, and I can hear that the lack of a visible path is frustrating, especially if you've been doing senior-level work. Here's what I can say honestly: a promotion to Senior is realistic in 6 to 12 months if you lead the payments migration, and at the next review cycle in 4 months I can recommend an above-average increase, though I can't guarantee an amount. I know that doesn't match a 20% offer today, so what would you need to see from us to feel this is worth staying for? And if it works for you, I'd like us to sit down by Friday to map out what leading the payments migration would look like."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. So the honest answer is six to twelve months, maybe, and a raise I can't pin down, versus twenty percent today. I hear you that you can't promise the amount. But I need more than 'realistic.' If I'm going to stay, I want that Senior path in writing, with what I have to show and a rough date. And honestly, I like this team, that's real, but I can't keep doing senior work on a title that says otherwise."
+    },
+    {
+      "role": "manager",
+      "text": "That's a fair ask, and I can commit to writing up what Senior looks like here: the specific outcomes you'd need to show, including leading the payments migration, and the timeline as I see it, which is 6 to 12 months. What I can't do is put a guaranteed promotion date in writing, because that isn't mine to promise alone, but I can make the criteria and my recommendation clear. Can we sit down by Friday to draft it together, so it reflects what you think counts as senior-level work too?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Friday works, and I'll take the criteria in writing, that's a start. But 'not mine to promise alone' worries me. Who makes that call, and when? If I'm going to turn down twenty percent, I need to know there's a real decision date, not just a maybe."
+    },
+    {
+      "role": "manager",
+      "text": "That's a reasonable worry, and I don't want to dodge it. I'm not able to give you a decision date today, because the brief I have doesn't include how the promotion approval process works or when it happens, so I won't guess. What I can do is find out who signs off and what the timing looks like, and tell you by Friday so we can build it into the written plan. The date I can commit to is the next review cycle in 4 months, where I can recommend an above-average increase, though I can't guarantee the amount."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, that's more useful than I expected. So by Friday you'll tell me who signs off and when, and the four-month review is the one date you can actually stand behind. Put that in the written plan too, with the criteria. If the decision date slips, I need to hear about it from you, not find out later."
+    },
+    {
+      "role": "manager",
+      "text": "Agreed, I'll put all of it in the written plan: the criteria, who signs off and when, and the four-month review, and if any date moves, you'll hear it from me directly and right away. One thing I should be honest about is that I can't match the 20% offer, and I don't want you to turn it down on a promise I can't keep. So let's confirm: Friday, we draft the plan together, and I'll bring the sign-off answer with me. Does a time that day work for you?"
+    },
+    {
+      "role": "employee",
+      "text": "Yeah, Friday works. Let's do it first thing, before my day fills up. And I'll be honest, I'd rather stay. I like this team and I don't want to leave over a title. But I can't decide on the other offer until I see the plan in writing, so I'm going to need it by Friday afternoon at the latest."
+    }
+  ]
+}

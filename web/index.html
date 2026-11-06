@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manager Flight Simulator</title>
+<style>
+:root{--bg:#f6f5f2;--panel:#fff;--ink:#1d1d1b;--muted:#6b6a66;--line:#e3e1db;--accent:#2f5d50;--accent-ink:#fff;
+--me:#e8f0ed;--them:#f1efea;--good:#2e7d4f;--mid:#b7791f;--bad:#b3261e}
+@media (prefers-color-scheme:dark){:root{--bg:#151514;--panel:#1f1f1d;--ink:#ecebe7;--muted:#a3a19b;--line:#33322f;
+--accent:#7fb8a4;--accent-ink:#10201b;--me:#24332e;--them:#2a2927;--good:#6cc08b;--mid:#e0b25a;--bad:#f08a80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:20px 16px 8px;max-width:1100px;margin:auto}
+h1{font-size:22px;margin:0}
+header p{margin:4px 0 0;color:var(--muted)}
+main{max-width:1100px;margin:auto;padding:8px 16px 40px;display:grid;gap:16px;grid-template-columns:320px 1fr}
+@media (max-width:820px){main{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 10px}
+.scen{display:block;width:100%;text-align:left;background:none;border:1px solid var(--line);border-radius:10px;
+padding:10px 12px;margin-bottom:8px;color:var(--ink);cursor:pointer;font:inherit}
+.scen:hover,.scen.on{border-color:var(--accent)}
+.scen small{color:var(--muted)}
+.brief{font-size:14px;white-space:pre-wrap}
+#chat{display:flex;flex-direction:column;min-height:460px}
+#log{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding-bottom:12px;max-height:60vh}
+.msg{max-width:80%;padding:9px 13px;border-radius:14px}
+.msg.manager{align-self:flex-end;background:var(--me)}
+.msg.employee{align-self:flex-start;background:var(--them)}
+.msg .who{font-size:12px;color:var(--muted)}
+form{display:flex;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+textarea{flex:1;resize:vertical;min-height:52px;border:1px solid var(--line);border-radius:10px;padding:10px;
+background:var(--bg);color:var(--ink);font:inherit}
+button.primary{background:var(--accent);color:var(--accent-ink);border:0;border-radius:10px;padding:0 16px;font:inherit;
+font-weight:600;cursor:pointer}
+button.ghost{background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 14px;
+font:inherit;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.bar{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.trust{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.meter{width:120px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);transition:width .4s}
+.spacer{flex:1}
+.empty{color:var(--muted);margin:auto;text-align:center;max-width:340px}
+#report .score{font-size:44px;font-weight:700;line-height:1}
+.item{display:grid;grid-template-columns:70px 1fr;gap:8px;padding:10px 0;border-top:1px solid var(--line)}
+.tag{font-size:12px;font-weight:600;border-radius:6px;padding:2px 6px;height:fit-content;text-align:center}
+.met{color:var(--good);border:1px solid var(--good)}.partial{color:var(--mid);border:1px solid var(--mid)}
+.missed,.flag{color:var(--bad);border:1px solid var(--bad)}
+q{display:block;color:var(--muted);font-style:italic;margin-top:2px}
+q::before,q::after{content:none}
+.mode{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--muted)}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>Manager Flight Simulator</h1>
+  <p>Practise the hardest conversations on a simulated employee, then get graded against the playbook.</p>
+</header>
+<main>
+  <section>
+    <div class="card"><h2>Choose a scenario</h2><div id="scenarios"></div></div>
+    <div class="card hidden" id="briefCard" style="margin-top:16px"><h2>Your brief</h2><div class="brief" id="brief"></div></div>
+  </section>
+  <section>
+    <div class="card" id="chat">
+      <div class="bar">
+        <strong id="who">No conversation yet</strong>
+        <span class="trust hidden" id="trustBox">Trust <span class="meter"><i id="trust" style="width:50%"></i></span> <span id="mood"></span></span>
+        <span class="spacer"></span>
+        <span class="mode" id="spend" title="Cost of this conversation"></span><span class="mode" id="mode"></span>
+        <button class="ghost" id="end" disabled>End and get scorecard</button>
+      </div>
+      <div id="log"><p class="empty">Pick a scenario. Read the brief, then talk to the employee as you would in a real 1:1.</p></div>
+      <form id="form"><textarea id="text" placeholder="What do you say?" disabled></textarea>
+        <button class="primary" id="send" disabled>Send</button></form>
+    </div>
+    <div class="card hidden" id="report" style="margin-top:16px"></div>
+  </section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let session=null,name="";
+async function api(path,body){
+  const r=await fetch(path,body?{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)}:{});
+  const d=await r.json(); if(!r.ok) throw new Error(d.error||r.status); return d;
+}
+function add(role,text){
+  const e=document.createElement("div"); e.className="msg "+role;
+  e.innerHTML=`<div class="who">${role==="manager"?"You":esc(name)}</div>${esc(text)}`;
+  $("log").appendChild(e); $("log").scrollTop=1e9;
+}
+function showSpend(sp){ if(!sp||!sp.calls) return; $("spend").textContent=`$${sp.usd.toFixed(4)} this session · $${sp.total_usd.toFixed(2)} of $${sp.budget_usd.toFixed(2)}`; }
+function setTrust(t,mood){ $("trust").style.width=(t*10)+"%"; $("mood").textContent=mood?`· ${mood}`:""; }
+async function load(){
+  const d=await api("/api/scenarios");
+  $("mode").textContent=d.mode==="offline"?"Offline demo mode":"Live: Claude";
+  $("scenarios").innerHTML=d.scenarios.map(s=>`<button class="scen" data-id="${s.id}"><strong>${esc(s.title)}</strong><br><small>${esc(s.employee_name)} · ${esc(s.difficulty)}</small></button>`).join("");
+  document.querySelectorAll(".scen").forEach(b=>b.onclick=()=>begin(b.dataset.id,b));
+}
+async function begin(id,btn){
+  document.querySelectorAll(".scen").forEach(b=>b.classList.toggle("on",b===btn));
+  const d=await api("/api/start",{scenario:id}); session=d.session; name=d.scenario.employee_name;
+  $("brief").textContent=d.scenario.brief; $("briefCard").classList.remove("hidden");
+  $("who").textContent=`1:1 with ${name}`; $("trustBox").classList.remove("hidden"); setTrust(5,"");
+  $("log").innerHTML=""; $("report").classList.add("hidden"); $("spend").textContent="";
+  add("employee",d.scenario.opening);
+  ["text","send","end"].forEach(i=>$(i).disabled=false); $("text").focus();
+}
+$("form").onsubmit=async e=>{
+  e.preventDefault(); const text=$("text").value.trim(); if(!text||!session) return;
+  add("manager",text); $("text").value=""; $("send").disabled=true;
+  try{ const r=await api("/api/say",{session,text}); add("employee",r.reply); setTrust(r.trust,r.mood); showSpend(r.spend);
+    if(r.turns_left<=0){$("text").disabled=true;}
+  }catch(err){ add("employee","⚠ "+err.message); }
+  $("send").disabled=false; $("text").focus();
+};
+$("text").addEventListener("keydown",e=>{ if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("form").requestSubmit();} });
+$("end").onclick=async()=>{
+  $("end").disabled=true; $("end").textContent="Grading…";
+  try{ render(await api("/api/grade",{session})); ["text","send"].forEach(i=>$(i).disabled=true); }
+  catch(err){ alert(err.message); $("end").disabled=false; }
+  $("end").textContent="End and get scorecard";
+};
+function render(r){
+  const items=r.items.map(i=>`<div class="item"><span class="tag ${i.status}">${i.status}</span><div>${esc(i.text)}
+    ${i.quote?`<q>Turn ${esc(i.turn)}: “${esc(i.quote)}”</q>`:""}${i.why?`<div style="font-size:13px">${esc(i.why)}</div>`:""}</div></div>`).join("");
+  const flags=r.red_flags.map(f=>`<div class="item"><span class="tag flag">red flag</span><div>${esc(f.flag)}${f.quote?`<q>Turn ${esc(f.turn)}: “${esc(f.quote)}”</q>`:""}</div></div>`).join("");
+  const rw=r.rewrite&&r.rewrite.original?`<h2 style="margin-top:16px">Say this instead</h2><q>“${esc(r.rewrite.original)}”</q><div>→ ${esc(r.rewrite.better)}</div>`:"";
+  const best=r.best_moment&&r.best_moment.quote?`<h2 style="margin-top:16px">Best moment</h2><q>“${esc(r.best_moment.quote)}”</q><div>${esc(r.best_moment.why)}</div>`:"";
+  showSpend(r.spend);
+  const sp=r.spend&&r.spend.calls?`<h2 style="margin-top:16px">What this session cost</h2>`+Object.entries(r.spend.by_role).map(([k,v])=>`<div>${esc(k)}: ${v.calls} calls, $${v.usd.toFixed(4)}</div>`).join(""):"";
+  $("report").innerHTML=`<h2>Scorecard</h2><div class="bar"><span class="score">${r.score}</span><span>/ 100</span>
+    <span class="spacer"></span><span class="trust">Trust path: ${r.trust_path.join(" → ")}</span></div>
+    <p>${esc(r.summary)}</p>${flags}${items}${best}${rw}${sp}`;
+  $("report").classList.remove("hidden"); $("report").scrollIntoView({behavior:"smooth"});
+}
+load();
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "id": "T18",
+  "scenario": "raise_denied",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Thanks for making time. So, have you had a chance to think about the raise I asked about?"
+    },
+    {
+      "role": "manager",
+      "text": "Aisha, yes, thanks for coming, and first off I want you to know how much I value what you've been doing, because honestly the team has really noticed. So I did start looking into the raise, and it's a bit of a, you know, there are a few moving parts with budget and timing, and I'm still sort of piecing together where everything lands. Can I ask what's behind the 15% and what you've been thinking in terms of where you'd like to go here?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay, sure. The 15% is because I have another offer on the table at about 20% more than what I make now, and I'd really rather not leave. But I'm not going to be vague about it: I've been doing Senior-level work for a while now, and I'd like to know what it takes to get there."
+    },
+    {
+      "role": "manager",
+      "text": "Okay, thank you for being so open with me, that really helps, and I'm glad you'd rather stay, because I'd hate to lose you. On the Senior question, I think you're pretty close, honestly, and a lot of it comes down to the payments migration, if you were to lead that, that'd be a big piece of the picture. The raise side is where it gets a little tangly, because I think there's some room coming up with the next review, though I don't want to promise you a number I can't back up."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, but 'some room coming up with the next review' doesn't tell me much. When is that review, and is the Senior title tied to leading the payments migration, or is that just one of several things? I need to know whether I can count on this before I say no to the other offer."
+    },
+    {
+      "role": "manager",
+      "text": "Right, fair question, and I'm sorry I'm being a bit slippery. The review is, I think, sometime in the next few months, maybe around four, and I'd be pushing for a good increase for you there, though I can't say exactly what it'd be. On Senior, the migration is really the big thing, I'd say it's pretty much the path, and if you led it I'd expect we could get you there in the next six months or so, but let me double-check the details and get back to you."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, 'pretty much the path' and 'six months or so' are still a lot of maybes. I need this in writing before I turn down the other offer. Can you put the review timing, the Senior criteria, and what you'd push for in an email to me this week?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, absolutely, I can get you an email this week, and I'm glad you asked for it because it makes sense to have it down somewhere. I should be upfront that I can't put a guaranteed number in writing, and the Senior timeline is more like six to twelve months depending on how the migration goes, so I'd rather give you the real picture than overpromise. I'll write up the review timing, what I'd recommend, and what Senior looks like, and I'll try to get it to you by Thursday, if that works?"
+    },
+    {
+      "role": "employee",
+      "text": "Thursday is fine, but I need to know my deadline on the other offer is going to hold, so I'm not stuck waiting on your email. And if you can't put a number on the raise, can you at least tell me the range you're working with, or whether it's even possible to get close to 15%? Six to twelve months is a lot longer than I expected to hear."
+    },
+    {
+      "role": "manager",
+      "text": "Honestly, I don't know your deadline on the other offer, so I'd say ask them for a little extra time, maybe just until Friday, so you're not waiting on me, and I'll do my best to get the email out Thursday morning. On the range, I really don't have a number yet, and I'll be straight that there's no budget for a raise before the review, so getting close to 15% right now isn't something I can see happening. What I can say is that I'd push for an above-average increase at the review, and I know that's probably not the answer you were hoping for, and I'm sorry about that."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, so no money before the review, and the review is maybes too. I can't ask the other company for more time based on an email that hasn't arrived yet. If Thursday comes and I don't have it in writing, I'm going to have to decide without you."
+    }
+  ]
+}

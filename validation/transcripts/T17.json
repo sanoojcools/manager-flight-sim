@@ -1,0 +1,50 @@
+{
+  "id": "T17",
+  "scenario": "layoff",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hi. You wanted to see me? Is this about the Q3 dashboard? I'm nearly done with it."
+    },
+    {
+      "role": "manager",
+      "text": "Hi Priya, thanks for coming in, and no, it's not about the dashboard. I'm sorry to say this, but your role is being eliminated as part of a restructuring of the analytics team, and the decision is final. Your last day will be 30 days from now, and I wanted you to hear it from me directly first."
+    },
+    {
+      "role": "employee",
+      "text": "Eliminated? Wait... my role? I... sorry, I need a second. Why me? I've had 'exceeds' every year since I joined. Is this about performance, because nobody ever said a word to me about it."
+    },
+    {
+      "role": "manager",
+      "text": "Take all the time you need, Priya. No, this is not about your performance at all, and your reviews reflect the work you've done here. The whole analytics team is being restructured and the role itself is being cut, so this isn't a judgment on you. I know that's hard to hear, and I'm sorry."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Okay, thank you for saying that plainly. I just... I have a nine-year-old, and our health cover runs through this job. What happens to that? When does it stop?"
+    },
+    {
+      "role": "manager",
+      "text": "That's a fair thing to ask first, and I'm glad you did. Your health cover will continue for three months after your last day, so you and your child stay covered while you figure out next steps. I know that doesn't make this any easier, but I wanted you to hear that right away, and Sam in HR will be following up with you today with all the paperwork so you'll have the details in writing."
+    },
+    {
+      "role": "employee",
+      "text": "Three months. Okay. Is that guaranteed in writing, or is it just what you think it'll be? And is there any severance, or... is that something Sam would cover too?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, the three months of health cover is part of the package, and Sam will put it in writing today so you're not relying on my word. There is severance too: eight weeks of pay plus a week for each year you've been here, which comes to 14 weeks in total, and outplacement support is included as well. Sam can walk you through exactly how it's paid out, and I'm happy to answer anything else I can right now."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Fourteen weeks. Can you make sure the reference part is in that email too, the one from you or from the team? I'll need something for interviews, and I don't want to be scrambling for it later. Sorry, I'm still trying to take this in."
+    },
+    {
+      "role": "manager",
+      "text": "Don't apologize, Priya, you're handling this far better than most would. I don't have a reference in the paperwork Sam is sending, so I can't promise it'll be in that email, but I'm glad to be a reference for you myself, and I'll write something you can use for interviews. Let me get that to you soon, and in the meantime, is there anything else you want to ask me right now?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Yes, could you send the reference in writing too, not just tell me you'll do it? And can I ask... is there any chance of an internal role somewhere else in the company before the 30 days are up? I'm not trying to push you, I just need to know what my options are."
+    }
+  ]
+}

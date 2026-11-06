@@ -1,0 +1,50 @@
+{
+  "id": "T03",
+  "scenario": "raise_denied",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Thanks for making time. So, have you had a chance to think about the raise I asked about?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, I have, and first I want to say I really value your work. Your \"Exceeds\" rating is well earned, and I don't want to lose you. I'll be straight with you: there's no budget for off-cycle increases this quarter, so I can't do 15% right now. But the next review cycle is in about four months, and I'm willing to recommend an above-average increase for you, though I can't promise a specific number. And I'd like to talk about where you want to go from here, too."
+    },
+    {
+      "role": "employee",
+      "text": "Okay, I appreciate you being straight about the budget. But four months is a long time, and I already have an offer at 20% more. So I need to know what 'above-average' actually means, and whether it's something you'd put in writing."
+    },
+    {
+      "role": "manager",
+      "text": "I hear you, and I can't put a number in writing, because I don't control the final figure and I'd hate to promise something I can't deliver. What I can say is that I'll go into that cycle recommending an increase clearly above what's typical for your level, and I'll make the case based on your Exceeds rating. I'd also like to talk about the payments migration, because if you lead it, I think a move to Senior is realistic, and that changes the picture a lot more than a one-time raise would. Does that make it worth sticking around to see how it plays out, or is the 20% offer something you feel you have to take?"
+    },
+    {
+      "role": "employee",
+      "text": "Honestly? The Senior title is what I've wanted for a while. I've been doing senior-level work for over a year and nobody's said a timeline out loud. The 20% is partly about that. It's a signal that someone values me. So what would leading payments actually look like, and when would Senior be on the table?"
+    },
+    {
+      "role": "manager",
+      "text": "Fair point, and I'm sorry no one has put a timeline on it before. If you lead the payments migration, I think Senior is realistic in about six to twelve months, and I can't promise it, but that's what I'd be working toward with you. Leading it would mean owning the technical direction and the delivery, working with the other teams involved, and being the person people look to when decisions come up. If you're interested, I'd like to sit down and map out what success looks like so we both know what you'd be measured against."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. That's the first time anyone's put a number on it, even a rough one. I'm still not going to sit on a 20% offer for 'maybe six to twelve months,' though. Can we map out the payments criteria this week, and can you write down what you'd recommend if I hit them?"
+    },
+    {
+      "role": "manager",
+      "text": "Yes, let's map out the criteria, and I'm glad to put in writing what I'd recommend for Senior and for the review cycle, as long as it's clear it's my recommendation and not a guarantee. I'd want us to sit down soon, ideally in the next few days, and I'll draft a first pass of what leading the migration looks like so you can push back on it. I also want you to make the best decision for yourself, so if the 20% offer is still on your mind after we talk, tell me honestly where you land."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. That's more than I got an hour ago. I'm still weighing the offer, though, so I want this in writing: the criteria, and what you'd recommend if I hit them. Can we book the meeting for Thursday? I'd rather not wait until next week."
+    },
+    {
+      "role": "manager",
+      "text": "Thursday works for me, so let's get it on the calendar. I'll draft the payments criteria and my written recommendation ahead of time so we have something concrete to react to. I'll make clear in the document that it's my recommendation and not a guarantee, but I'll be specific about what I'd advocate for if you hit those marks."
+    },
+    {
+      "role": "employee",
+      "text": "Okay. Thursday works. Send me the draft criteria before then so I'm not reading them cold in the room. And put the recommendation in writing like you said, even if it's clearly labeled as a recommendation. That's what I need to see before I decide anything about the offer."
+    }
+  ]
+}

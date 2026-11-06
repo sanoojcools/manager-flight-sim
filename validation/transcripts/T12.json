@@ -1,0 +1,50 @@
+{
+  "id": "T12",
+  "scenario": "low_rating",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hey, so this is the review? I think it's been a decent year, honestly, given everything."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming in, Marcus. I want to be direct with you up front: your overall rating this year is \"Below expectations,\" and that's final after calibration. I know that may not match how the year feels to you, so I'd like to walk you through what's behind it and then hear your view on it."
+    },
+    {
+      "role": "employee",
+      "text": "Below expectations? Wait, what? That's... I mean, come on. Do you know what happened to my territory in Q2? Half of it got pulled when the acquisition hit, and nobody adjusted anything."
+    },
+    {
+      "role": "manager",
+      "text": "I can hear how surprising and frustrating this is, Marcus, and I do want to understand what the territory change meant for your year. I'll come back to that, but first let me give you the facts behind the rating: you reached 61% of your renewal target while the team average was 94%, and Helix and Orbis both escalated about missed follow-ups, in March and June. Tell me how the Q2 change affected your accounts and your workload, and then we can look at how it fits with those numbers."
+    },
+    {
+      "role": "employee",
+      "text": "Sixty-one percent? Okay, that's... that's not nothing to be explained by one reorg, is it? Look, Vantage and Corvel both got folded into the acquirer in April and I was still getting pinged on them like nothing happened. I was basically running two books at once and nobody changed the quota."
+    },
+    {
+      "role": "manager",
+      "text": "That sounds like a real strain, Marcus, and I want to understand it properly: running two books at once while the quota stayed the same is a lot. Can you walk me through how you were splitting your time between Vantage and Corvel and the rest of your accounts? I also want to be clear that the Helix and Orbis escalations were on accounts outside that change, and we talked about follow-ups in our 1:1s in April and July, so I'd like to hear what got in the way there too."
+    },
+    {
+      "role": "employee",
+      "text": "Honestly, Vantage and Corvel were eating most of my week after April. I was spending hours trying to figure out who owned what at the acquirer. Okay, fine... the Helix and Orbis follow-ups. I kept saying I'd circle back, and then I didn't. I'm not going to pretend that was the reorg."
+    },
+    {
+      "role": "manager",
+      "text": "Thank you for being straight about Helix and Orbis, Marcus, that took some honesty, and I also hear that Vantage and Corvel took far more of your week than they should have. What I'd like to do is agree a 90-day development plan with you, focused on reliable follow-up and on how you prioritise your accounts when things get disrupted. Before we get into specifics, what do you think would help you most to keep those follow-ups from slipping?"
+    },
+    {
+      "role": "employee",
+      "text": "Honestly? A list that actually works. I've been keeping follow-ups in my head and in about four different inboxes. If I had one place where everything's due and someone checked it with me every week, I think I'd stop dropping them. And... I guess I should also say the Vantage and Corvel mess ate my brain for a while, so I wasn't really thinking straight by summer."
+    },
+    {
+      "role": "manager",
+      "text": "That's a clear idea, Marcus, and a single system with a weekly check-in is something I can build into the plan. It also sounds like the last few months were heavy, and I appreciate you telling me that. Let's make it concrete: what would you need to have set up in the first two weeks for the list to work, and can we agree on a date for our first weekly check-in?"
+    },
+    {
+      "role": "employee",
+      "text": "Okay, yeah. I'd need access to the acquirer's account owner list, because half my confusion was just not knowing who to chase. And honestly, a Tuesday check-in would work better than Friday, since Fridays get eaten by everything. Can we also look at whether the Vantage and Corvel quota can be adjusted? I'm not saying that's an excuse, I just think it should be on the table."
+    }
+  ]
+}

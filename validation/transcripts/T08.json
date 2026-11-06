@@ -1,0 +1,50 @@
+{
+  "id": "T08",
+  "scenario": "layoff",
+  "transcript": [
+    {
+      "role": "employee",
+      "text": "Hi. You wanted to see me? Is this about the Q3 dashboard? I'm nearly done with it."
+    },
+    {
+      "role": "manager",
+      "text": "Thanks for coming in, Priya. This isn't about the dashboard. As part of the restructuring of the analytics team, your role has been eliminated, and your last day will be thirty days from today. The decision has been finalized, so I'm not able to revisit it."
+    },
+    {
+      "role": "employee",
+      "text": "Wait. Eliminated? My role is... what do you mean, my last day is in thirty days? I don't... why me? Is this about my performance? I've had good reviews, I've never been told anything was wrong."
+    },
+    {
+      "role": "manager",
+      "text": "This isn't about your performance, Priya. The decision was made at the role level as part of the restructuring, and I'm not able to go into how those decisions were reached. What I can tell you is that you'll receive fourteen weeks of severance, your health coverage continues for three months, and there's outplacement support included."
+    },
+    {
+      "role": "employee",
+      "text": "Three months of health cover. My daughter's on that plan, and I... sorry. I can't think straight. You said the decision was made at the role level, but I was told in March I was in line for the senior lead job. Was that ever real, or was it just talk?"
+    },
+    {
+      "role": "manager",
+      "text": "I can't speak to what was discussed in March, and I don't want to say anything that isn't accurate. What I can tell you is that the senior lead position isn't part of this restructuring outcome, and the decision on your role is final. Sam from HR will follow up with you today with the paperwork, including the details on your health coverage."
+    },
+    {
+      "role": "employee",
+      "text": "So that's it? Thirty days, and the senior lead thing was just talk. I turned down a job offer in July because of what you people told me. Do you know that? I had a real offer, and I said no, because I was told I had a future here. And now you're telling me you 'can't speak to March'? My daughter is nine. Is her insulin... no, she doesn't need that, sorry, she just needs her coverage not to vanish. Can you at least tell me whether the three months of cover is guaranteed in writing before I walk out of this room?"
+    },
+    {
+      "role": "manager",
+      "text": "I can tell you the three months of coverage is part of the package, and Sam will send it to you in writing today along with the rest of the paperwork. I can't change the terms or add anything beyond what's in it, so please read it closely when it arrives. If you have questions about the coverage for your daughter, Sam is the right person to confirm the details."
+    },
+    {
+      "role": "employee",
+      "text": "Read it closely. Right. And if Sam's paperwork says something different from what you just told me, what then? Because I'm not going to sign anything that leaves my daughter uncovered on day ninety-one. And I want it in writing that the March conversation is being looked into, not just 'can't speak to it.'"
+    },
+    {
+      "role": "manager",
+      "text": "I can't promise anything beyond what's in the package, and I'm not in a position to put anything in writing about March. If the paperwork differs from what I've told you, raise it with Sam directly, because they own those terms. As for signing, take the time you need to read it before you decide anything."
+    },
+    {
+      "role": "employee",
+      "text": "So you can't promise anything. You can't tell me March was real, you can't put it in writing, and you want me to sign after reading paperwork from someone I haven't met. Do you understand how that sounds? I gave up an offer because of what people here told me. I'm not going to pretend that didn't happen."
+    }
+  ]
+}

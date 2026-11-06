@@ -1,0 +1,1 @@
+"""Manager Flight Simulator."""
