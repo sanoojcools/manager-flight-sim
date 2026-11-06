@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-06T11:13:53.223Z",
+  "flags": [
+    3
+  ],
+  "gut": 1,
+  "id": "T04",
+  "items": [
+    "missed",
+    "met",
+    "missed",
+    "partial",
+    "met",
+    "met",
+    "partial"
+  ],
+  "itemsDone": true,
+  "notes": "too direct, didnt win trust. should have heard him out and directed him to hr for accomodation request.",
+  "scenario": "rto",
+  "score": 32
+}

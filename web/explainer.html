@@ -151,7 +151,7 @@ footer a{color:var(--cyan)}
     <div class="stats">
       <div class="stat"><b>$0.057</b><span>average cost per practice session, measured across 7 live sessions</span></div>
       <div class="stat"><b>0 → 93</b><span>score range across 20 test conversations, from poor to excellent managers</span></div>
-      <div class="stat pending"><b>Pending</b><span>agreement with a certified Amazon Bar Raiser grading the same 20 conversations blind</span></div>
+      <div class="stat pending"><b>0.79</b><span>agreement (kappa) with an experienced HR leader grading 8 conversations blind; never more than one band apart</span></div>
     </div>
   </section>
 
@@ -175,7 +175,7 @@ const AUD = {
   "Line manager": { pain: "You dread this conversation, and nobody ever showed you how to do it well. You get one try, on a real person.", gets: "A private rehearsal with someone who reacts like a real person, including the things they're not telling you. Afterwards you get your exact words back, what landed, and a better line to try next time." },
   "Employee": { pain: "The worst news of your working year, delivered by someone who's nervous, vague or defensive.", gets: "A manager who has already practised: clear in the first minute, honest about what can't change, specific about what happens next, and human about it." },
   "L&D and HR teams": { pain: "Role-play workshops are expensive, rare and hard to measure. Managers forget them by the time the real conversation comes.", gets: "Practice on demand, any time. You write the playbooks and red flags yourself, every session is saved, and the grader is checked against expert human graders." },
-  "Hiring panel": { pain: "Can this HR leader actually build with AI, and do they have the judgment to know where it fails?", gets: "A working product, a measured cost per session, a grader validated against a certified Bar Raiser, and an honest list of limits." }
+  "Hiring panel": { pain: "Can this HR leader actually build with AI, and do they have the judgment to know where it fails?", gets: "A working product, a measured cost per session, a grader checked blind against a certified Bar Raiser (kappa 0.79 on a first 8 conversations), and an honest list of limits." }
 };
 const tabs = document.getElementById("tabs"), aud = document.getElementById("aud");
 function show(k){

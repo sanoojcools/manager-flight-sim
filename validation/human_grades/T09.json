@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-06T11:24:32.931Z",
+  "flags": [],
+  "gut": 1,
+  "id": "T09",
+  "items": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "itemsDone": false,
+  "mode": "speed",
+  "notes": "",
+  "scenario": "raise_denied",
+  "score": null
+}

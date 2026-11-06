@@ -41,11 +41,19 @@ An AI grader is only useful if it judges the way an experienced HR leader would.
 
 - 20 practice conversations (4 scenarios x 5 manager styles, from excellent to poor), made with
   `python -m validation.make_transcripts`. A Claude model plays the manager; the app's own employee and grader do the rest.
-- A certified Amazon Bar Raiser grades all 20 blind, without seeing the AI's grades (kept out of this repo until then).
+- An experienced HR leader (the author: a certified Amazon Bar Raiser, with HR roles at Trianz, Swvl and Carrefour) grades them blind,
+  without seeing the AI's grades. The AI's grades for ungraded conversations stay out of this repo.
 - `python -m validation.compare <grades folder>` reports quadratic-weighted kappa on score bands, item-level
   agreement and red-flag agreement.
 
-**Result: pending.** It will be published here, good or bad.
+**First result (2026-11-06, 8 conversations): quadratic-weighted kappa 0.79.**
+
+- The AI and the human never disagreed by more than one score band (bands: 0-24, 25-49, 50-74, 75-100). Exact band match: 3 of 8.
+- The AI is slightly more generous: mean band 1.88 vs 1.50 for the human. The clearest case is T08 (a weak layoff
+  conversation): the AI scored it 79, the human rated it Mixed.
+- Red-flag agreement: 7 of 8. Playbook item agreement (4 fully graded conversations): 21 of 28 (75%).
+- Caveat: 8 is a small sample, so treat this as a first read, not proof. Four conversations were graded item by item,
+  four with a one-tap overall rating. Details: [validation/results.md](validation/results.md).
 
 Measured cost and the first live test: [COSTS.md](COSTS.md) and [docs/first-live-runs.md](docs/first-live-runs.md).
 `web/explainer.html` is a one-page explainer of why this matters for CHROs, managers, employees, L&D teams and hiring panels.

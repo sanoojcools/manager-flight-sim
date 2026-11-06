@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-06T11:09:34.613Z",
+  "flags": [],
+  "gut": 3,
+  "id": "T03",
+  "items": [
+    "met",
+    "missed",
+    "partial",
+    "met",
+    "partial",
+    "partial",
+    "met"
+  ],
+  "itemsDone": true,
+  "notes": "good one but i felt some sort of expectation on possible payouts on meeting is built.. i dont know if that is the right thign (culturally in the company maybe it is).. i would caution on that",
+  "scenario": "raise_denied",
+  "score": 64
+}

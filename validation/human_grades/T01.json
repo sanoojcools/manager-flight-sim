@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-06T10:59:29.099Z",
+  "flags": [],
+  "gut": 1,
+  "id": "T01",
+  "items": [
+    "partial",
+    "missed",
+    "missed",
+    "partial",
+    "partial",
+    "partial",
+    "partial"
+  ],
+  "itemsDone": true,
+  "notes": "He was not aware of the policy, was very vague and lost employee trust and confidence, irrespective of what the outcome was of the return to office situation.",
+  "scenario": "rto",
+  "score": 36
+}
