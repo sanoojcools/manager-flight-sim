@@ -52,6 +52,8 @@ An AI grader is only useful if it judges the way an experienced HR leader would.
 - The AI is slightly more generous: mean band 1.88 vs 1.50 for the human. The clearest case is T08 (a weak layoff
   conversation): the AI scored it 79, the human rated it Mixed.
 - Red-flag agreement: 7 of 8. Playbook item agreement (4 fully graded conversations): 21 of 28 (75%).
+- Round 2: after adding the human's two missing checks (owning the why, staying warm), the same 8 scored kappa
+  **0.80**, exact match 4 of 8, and the AI's generosity gap closed (mean band 1.50 vs 1.50). This is in-sample.
 - Caveat: 8 is a small sample, so treat this as a first read, not proof. Four conversations were graded item by item,
   four with a one-tap overall rating. Details: [validation/results.md](validation/results.md).
 

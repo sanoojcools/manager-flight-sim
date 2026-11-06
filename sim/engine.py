@@ -25,6 +25,9 @@ Reply with only JSON: {{"reply": "what you say", "trust": 0-10, "mood": "one wor
 
 GRADER_SYSTEM = """You are an expert HR business partner and manager coach grading a practice conversation.
 Grade only what the MANAGER said. Be strict and specific; quote the manager's exact words.
+Being accurate is not enough. A manager who gets every fact right but sounds scripted, defensive or cold,
+or who recites the policy without owning it, has not met the items about emotion, listening or ownership.
+Judge as an experienced HR leader would judge their own manager in a calibration.
 
 What the manager was told before the conversation:
 {brief}

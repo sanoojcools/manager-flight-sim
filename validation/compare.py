@@ -1,6 +1,6 @@
 """Compare a human's blind grades with the AI grader's.
 
-    python -m validation.compare <folder of grade JSON files, one per transcript>
+    python -m validation.compare <folder of grade JSON files, one per transcript> [ai grades file]
 
 Reports quadratic-weighted kappa on the 0-100 score (binned into 4 bands), item-level
 agreement on met / partial / missed, and red-flag agreement.
@@ -42,8 +42,8 @@ def qwk(a, b, k=4):
     return 1 - num / den if den else 1.0
 
 
-def main(folder):
-    ai = json.loads((HERE / "ai_grades_HIDDEN.json").read_text())
+def main(folder, ai_file=None):
+    ai = json.loads(Path(ai_file or HERE / "ai_grades_HIDDEN.json").read_text())
     human = {}
     for f in Path(folder).rglob("*.json"):
         g = json.loads(f.read_text())
@@ -68,4 +68,4 @@ def main(folder):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

@@ -40,3 +40,20 @@ Next step: add "owns the message and the why" and "warmth under pressure" checks
 
 8 conversations and one rater. Kappa on a sample this small has a wide error band. The 12 ungraded conversations
 remain blind for more raters.
+
+## Round 2: grader sharpened with the human's feedback (same day)
+
+Change: two craft items added to every playbook ("owns the decision and the why", "stays warm under pressure"), and the
+grader is told that accuracy without ownership or warmth does not meet the emotion and listening items.
+Re-graded the same 8 conversations (`python -m validation.regrade`, $0.57):
+
+| Measure | Round 1 | Round 2 |
+|---|---|---|
+| Kappa | 0.79 | **0.80** |
+| Exact band match | 3 / 8 | **4 / 8** |
+| Mean band, human vs AI | 1.50 vs 1.88 | **1.50 vs 1.50** |
+| Playbook item agreement | 75% | 79% |
+
+The AI's generosity is gone: T08 (cold but accurate layoff) dropped from 79 to 61, matching the human's "Mixed".
+Honest limit: this was tuned and tested on the same 8 conversations, so it is an in-sample check. The real test is a
+fresh human grading of the 12 ungraded conversations.

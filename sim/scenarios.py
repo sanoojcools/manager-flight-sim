@@ -183,3 +183,14 @@ def public(scenario_id):
     s = SCENARIOS[scenario_id]
     return {"id": scenario_id, "title": s["title"], "difficulty": s["difficulty"], "brief": s["brief"],
             "employee_name": s["employee"]["name"], "opening": s["employee"]["opening"]}
+
+
+# Craft items every conversation is graded on, added after the first human validation
+# (2026-11-06): the human grader marked down managers who were accurate but recited policy
+# without owning it, or stayed correct but cold. See validation/results.md.
+COMMON_PLAYBOOK = [
+    "Own the decision and explain the reason behind it in your own words, rather than reciting policy or hiding behind it.",
+    "Stay warm and human under pressure: respond to what the employee feels, not only to what they ask; no cold, curt or defensive replies.",
+]
+for _s in SCENARIOS.values():
+    _s["playbook"] = _s["playbook"] + COMMON_PLAYBOOK

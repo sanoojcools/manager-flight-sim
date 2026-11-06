@@ -58,12 +58,13 @@ class Tests(unittest.TestCase):
 
     def test_score_is_computed_from_items_not_model(self):
         s = SCENARIOS["layoff"]
-        raw = {"items": [{"n": i, "status": "met"} for i in range(1, 8)], "overall": 3,
+        n = len(s["playbook"])
+        raw = {"items": [{"n": i, "status": "met"} for i in range(1, n + 1)], "overall": 3,
                "red_flags": [{"flag": "Promised a rehire", "turn": 2, "quote": "x"}]}
         fake = FakeClaude(json.dumps(raw))
         self.assertEqual(engine.grade("layoff", run(GOOD), fake)["score"], 75)  # 100 - 25
         raw["items"][0]["status"] = "partial"; raw["red_flags"] = []
-        self.assertEqual(engine.score(s, raw)["score"], round(100 * 6.5 / 7))
+        self.assertEqual(engine.score(s, raw)["score"], round(100 * (n - 0.5) / n))
 
     def test_bad_status_and_missing_items_count_as_missed(self):
         r = engine.score(SCENARIOS["rto"], {"items": [{"n": 1, "status": "excellent"}]})
